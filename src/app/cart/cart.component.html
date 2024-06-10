@@ -1,4 +1,10 @@
-<textarea [(ngModel)]="cartInput" rows="10" cols="30" placeholder="Entrez les noms des films, un par ligne..."></textarea>
-<br>
-<button (click)="calculateTotalPrice()">Acheter</button>
-<h2>Total: {{ totalPrice }} €</h2>
+<section class="cart">
+    <article class="cartList">
+        <textarea [(ngModel)]="cartInput" rows="10" cols="30" placeholder="Entrez les noms des films, un par ligne..."></textarea>
+        <br>
+        <button class="buy" (click)="calculateTotalPrice()">Acheter</button>
+    </article>
+    <aside class="summary">
+        <h2>Total: {{ totalPrice }} €</h2>
+    </aside>
+</section>

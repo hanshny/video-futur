@@ -50,7 +50,7 @@ describe('CartComponent', () => {
   it('should apply 10% discount for two different saga movies', () => {
     component.cartInput = 'Back to the Future 1\nBack to the Future 2';
     component.calculateTotalPrice();
-    expect(component.totalPrice).toBe(27); // 30 - 10% = 27
+    expect(component.totalPrice).toBe(27); 
   });
 
   it('should apply 20% discount for three different saga movies', () => {
